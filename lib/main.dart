@@ -10,7 +10,8 @@ class MainApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: ProfilePage()
+      home: ProfilePage(),
+      debugShowCheckedModeBanner: false,
     );
   }
 }
@@ -55,7 +56,7 @@ class _ProfilePageState extends State<ProfilePage>{
   Widget build(BuildContext context){
     return Scaffold(
       appBar: AppBar(
-        title: const Text("MI PERFIL", style: TextStyle(fontSize: 30)),
+        title: const Text("MI PERFIL", style: TextStyle(fontSize: 30, color:  Colors.purpleAccent)),
         backgroundColor: const Color.fromRGBO(104, 9, 176, 1.0),
         centerTitle: true,
       ),
@@ -67,7 +68,7 @@ class _ProfilePageState extends State<ProfilePage>{
             backgroundImage: AssetImage('images/my_photo.jpg'),),
             const Text("Job Jefferson Pérez Cabrera", 
             style: TextStyle(fontSize: 46, fontWeight: FontWeight.bold)),
-            Text("La hora actual es $currentTime", style: TextStyle(fontSize: 36, fontStyle: FontStyle.italic),)
+            Text("La hora actual es $currentTime", style: TextStyle(fontSize: 36, fontStyle: FontStyle.italic, color: Colors.deepPurple),)
           ],
         )
       ));
