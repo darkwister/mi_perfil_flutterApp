@@ -1,3 +1,2 @@
-# mi_perfil
-
-A new Flutter project.
+# Mi prefil
+App que muestra mi informacion junto con la hora actual
